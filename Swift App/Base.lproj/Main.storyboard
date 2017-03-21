@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,10 +29,10 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Df7-an-zlX"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="df0-Pa-gr0">
-                                <rect key="frame" x="139" y="116" width="100" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="df0-Pa-gr0">
+                                <rect key="frame" x="137.5" y="116" width="100" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="S1T-CI-eha"/>
+                                    <constraint firstAttribute="width" constant="100" id="DwU-O6-96D"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -40,18 +41,14 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Bb-zV-Sok">
                                 <rect key="frame" x="137" y="163" width="100" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Eaf-Np-ySf"/>
+                                    <constraint firstAttribute="width" constant="100" id="s44-gu-kFm"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmC-AR-okg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmC-AR-okg">
                                 <rect key="frame" x="37" y="40" width="300" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="331" id="fG2-zz-Ijc"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ohz-Sc-SLX"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,22 +56,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="df0-Pa-gr0" firstAttribute="top" secondItem="9T8-Dc-ZrX" secondAttribute="bottom" constant="17" id="7Ll-bE-46Z"/>
-                            <constraint firstItem="df0-Pa-gr0" firstAttribute="top" secondItem="9T8-Dc-ZrX" secondAttribute="bottom" constant="17" id="KN6-KT-hHu"/>
-                            <constraint firstItem="MmC-AR-okg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Lry-sa-DBV"/>
-                            <constraint firstItem="7Bb-zV-Sok" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QS6-zr-IAV"/>
-                            <constraint firstItem="7Bb-zV-Sok" firstAttribute="top" secondItem="df0-Pa-gr0" secondAttribute="bottom" constant="17" id="Sxx-dw-bJZ"/>
-                            <constraint firstItem="7Bb-zV-Sok" firstAttribute="top" secondItem="df0-Pa-gr0" secondAttribute="bottom" constant="17" id="Ved-ES-c3S"/>
-                            <constraint firstItem="df0-Pa-gr0" firstAttribute="leading" secondItem="7Bb-zV-Sok" secondAttribute="leading" id="fYU-1M-Wcb"/>
-                            <constraint firstItem="MmC-AR-okg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iS8-bG-i8f"/>
-                            <constraint firstItem="MmC-AR-okg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j3h-4e-Lj5"/>
-                            <constraint firstItem="MmC-AR-okg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lUW-54-plQ"/>
-                            <constraint firstItem="df0-Pa-gr0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p13-T4-29M"/>
-                            <constraint firstItem="MmC-AR-okg" firstAttribute="centerX" secondItem="9T8-Dc-ZrX" secondAttribute="centerX" id="p57-iu-gJ4"/>
-                            <constraint firstItem="df0-Pa-gr0" firstAttribute="trailing" secondItem="7Bb-zV-Sok" secondAttribute="trailing" id="qAJ-Lg-frs"/>
-                            <constraint firstItem="MmC-AR-okg" firstAttribute="trailing" secondItem="df0-Pa-gr0" secondAttribute="trailing" id="vyt-5l-u8n"/>
-                            <constraint firstItem="9T8-Dc-ZrX" firstAttribute="centerX" secondItem="df0-Pa-gr0" secondAttribute="centerX" id="wQW-c8-XUF"/>
-                            <constraint firstItem="9T8-Dc-ZrX" firstAttribute="top" secondItem="MmC-AR-okg" secondAttribute="bottom" constant="8" symbolic="YES" id="zmV-xw-0JA"/>
+                            <constraint firstItem="MmC-AR-okg" firstAttribute="centerX" secondItem="9T8-Dc-ZrX" secondAttribute="centerX" id="5li-XV-cBq"/>
+                            <constraint firstItem="MmC-AR-okg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="7gF-Zl-gRC"/>
+                            <constraint firstItem="df0-Pa-gr0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bzg-Xv-W4r"/>
+                            <constraint firstItem="MmC-AR-okg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="JUV-hv-RTk"/>
+                            <constraint firstItem="7Bb-zV-Sok" firstAttribute="top" secondItem="df0-Pa-gr0" secondAttribute="bottom" constant="17" id="PRn-6J-MDr"/>
+                            <constraint firstItem="MmC-AR-okg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wxo-DF-6gx"/>
+                            <constraint firstItem="MmC-AR-okg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fSu-T1-Icv"/>
+                            <constraint firstItem="9T8-Dc-ZrX" firstAttribute="centerX" secondItem="7Bb-zV-Sok" secondAttribute="centerX" id="hs5-7h-SaP"/>
+                            <constraint firstItem="df0-Pa-gr0" firstAttribute="top" secondItem="9T8-Dc-ZrX" secondAttribute="bottom" constant="17" id="kv7-gt-tLL"/>
+                            <constraint firstItem="9T8-Dc-ZrX" firstAttribute="top" secondItem="MmC-AR-okg" secondAttribute="bottom" constant="8" symbolic="YES" id="mA7-7M-z5w"/>
                         </constraints>
                     </view>
                     <connections>
